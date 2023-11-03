@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tables and diagrams</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        //first//
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+
+          ['Начало',     2],
+          ['Инфо',      1],
+          ['Диаграми...',  7],
+          ['Каталог', 6],
+          ['Галерия',    6]
+        ]);
+
+        var options = {
+          title: 'Разпределение на часовете за едно денонощие',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+
+        //second//
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Страница');
+        data.addColumn('number', 'Време');
+        data.addColumn('number', 'Трудност (1-10)');
+        data.addRows([
+          ['Начало',  {v: 2, f: '2 часа'},  {v: 5, f: '5'}],
+          ['Инфо',   {v:1,   f: '1 час'},   {v:4,   f: '4'}],
+          ['Диаграми и таблици', {v: 7, f: '7 часа'}, {v: 9, f: '9'}],
+          ['Каталог',   {v: 6,  f: '6 часа'},  {v: 8, f: '8'}],
+          ['Галерия',   {v: 6,  f: '6 часа'},  {v: 10, f: '10'}],
+          ['Контакти',   {v: 2,  f: '2 часа'},  {v: 7, f: '7'}],
+          ['Автор',   {v: 1,  f: '1 час'},  {v: 5, f: '5'}]
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+
+      //third//
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawBasic);
+
+      function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Страница');
+      data.addColumn('number', 'Трудност (1-10)');
+
+      data.addRows([
+      ['Начало',  {v: 5, f: '5'}],
+      ['Инфо',  {v:4,   f: '4'}],
+      ['Диаграми и таблици', {v: 9, f: '9'}],
+      ['Каталог',   {v: 8, f: '8'}],
+      ['Галерия',  {v: 10, f: '10'}],
+      ['Контакти',   {v: 7, f: '7'}],
+      ['Автор',   {v: 5, f: '5'}]
+      ]);
+
+      var options = {
+        title: 'Трудност на страниците',
+        hAxis: {
+          title: 'Страница',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: 'Рейтинг от 1 до 10'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+
+</head>
+<body class="diagramsBody">
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="info.html">Инфо</a></li>
+                <li><a href="catalogue.html">Каталог</a></li>
+                <li><a href="gallery.html">Галерия</a></li>
+                <li><a href="contactUs.html">Контакти</a></li>
+                <li><a href="author.html">Автор</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="diagramsSection">
+		<div class="diagramsContainer">
+			<div class="diagrams_content-section">
+				<div class="title">
+					<h1>Таблица</h1>
+				</div>
+				<div class="diagramsContent">
+					<h3>Таблица с данни за този сайт</h3>
+					<p>В три колони са изобразени данни. В първата колона са имената на страниците на този сайт. 
+            Във втората колона са изписани часовете, които са ми били нужни, за тяхната направа, а в 
+            третата колона, същите страници са оценени по трудност от 1 до 10.</p>
+				</div>
+			</div>
+			<div id="piechart">
+              <div id="table_div"></div>
+      </div>
+		</div>
+        <div class="diagramsContainer">
+			<div class="diagrams_content-section">
+				<div class="title">
+					<h1>Кръгова диаграма</h1>
+				</div>
+				<div class="diagramsContent">
+					<h3>Кръгова диаграма, изобразяваща страници от сайт и необходимото време за тяхната направа, 
+            като част от денонощието</h3>
+					<p>На диаграмата виждате изобразени част от страниците на моя сайт, както и часовете, които са ми били необходими
+            за тяхната направа, като част от денонощието (24 часа) в процент. 
+          </p>
+				</div>
+			</div>
+			<div id="piechart">
+          <div id="piechart_3d"></div>
+      </div>
+		</div>
+        <div class="diagramsContainer">
+			<div class="diagrams_content-section">
+				<div class="title">
+					<h1>Стълбовидна диаграма</h1>
+				</div>
+				<div class="diagramsContent">
+					<h3>Стълбовидна диаграма за трудност на страниците</h3>
+					<p>На стълбовидната диаграма е изобразена всяка една от страниците на сайта и нейната трудност, 
+            оценена по скалата от 1 до 10 (разбира се това е мое мнение, придобито по време на 
+            процеса на работа).</p>
+				</div>
+			</div>
+			<div id="piechart">
+          <div id="chart_div"></div>
+      </div>
+		</div>
+	</div>
+    
+</body>
+</html>

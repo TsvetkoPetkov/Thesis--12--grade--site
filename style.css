@@ -1,0 +1,991 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+.indexPage{
+    overflow: hidden;
+    background:url(./images/web-design-internet-website-responsive-software-concept.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+html{
+    font-size: 70.5%;
+}
+
+/*MAIN PAGE*/
+
+.container{
+    height: 90vh;
+    width: 90vw;
+    margin: 5rem auto;
+    overflow: hidden;
+    background:url(./images/pure-white-background-85a2a7fd.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+.container header .navbar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 70rem;
+}
+.container header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container header .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.container header .navbar ul .H,
+.container header .navbar ul a:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+.icon .fa:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.newP{
+    text-align: justify;
+}
+.logo {
+   margin-top: 0;
+   margin-left: 0;
+}
+header .menu{
+    position: absolute;
+    top: 10px; 
+    right:15px;
+    z-index: 3;
+    display: none;
+}
+header .menu i{
+    font-size: 4rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+    html{
+        font-size: 45%;
+    }
+    header .menu{
+        display: block;
+    }
+    .container header .navbar{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .container header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background: white;
+    }
+    .container header .navbar ul a{
+        font-size: 4rem;
+    }
+/*Responosive*/
+section{
+    flex-flow: column-reverse;
+}
+section .content{
+    padding:0 8rem;
+    text-align:center;
+}
+section .content .icon{
+    margin-top:0;
+}
+section .content button{
+    margin: 3rem auto;
+}
+/*end*/
+}
+section{
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section .content{
+    height: 40rem;
+    display: flex;
+    flex: 1 0 1rem;
+    justify-content: center;
+    padding-left: 3rem;
+    flex-flow: column;
+}
+section .content h1{
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+section .content p{
+    font-size:2rem;
+    color: black;
+}
+section .content button{
+    width:13rem;
+    background: black;
+    cursor: pointer;
+    margin: 2rem 0;
+    border-radius: 15px;
+}
+section .content button:hover{
+    border: 0.2rem solid rgb(5, 5, 5);
+    border-radius: 5rem;
+    padding:10px 15px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+section .content button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+section .content .icon{
+    margin-top: 4rem;
+}
+section .content .icon i{
+    margin:0 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+section .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 1rem;
+}
+section .image > img{
+    height: 45rem;
+}
+
+/*AUTHOR*/
+header .navbar{
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    width: 70rem;
+}
+header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+header .navbar ul .A,
+header .navbar ul a:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+.aboutMeBody{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: url(./images/visu-mac.webp) no-repeat;
+    background-size: 100%;
+}
+.about-section{
+    background: url(./images/IMG_0349.png) no-repeat left;
+    background-size: 61%;
+    overflow: hidden;
+    padding: 100px 0;
+    opacity: 0.9;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: white;
+    padding: 100px;
+    border: .2rem solid white;
+    border-radius: 5rem;
+    opacity: 0.89;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.text{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.icons{
+    margin-bottom: 0;
+    text-align: center;
+}
+.icons i{
+    margin:0 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.icons .fa:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1200px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+    .aboutMeBody{
+        padding-top: 320px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+/*CONTACTS*/
+.contacts{
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./images/Web-Design-High-Quality-PNG.png);
+    background-size: cover;
+}
+.navbar ul .C,
+.navbar ul a:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+.contacts .mainContent{
+    width: 70rem;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+.contacts .mainContent h2{
+    font-size: 40px;
+    font-weight: 500;
+    color:black ;
+    font-family: 'Estonia', cursive;
+    font-family: 'Road Rage', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+.contacts .mainContent p{
+    font-weight: 300;
+    color:black ;
+    font-family: 'Estonia', cursive;
+    font-family: 'Road Rage', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+.contactsBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.contactsBox .contactsInfo{
+    margin-bottom: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactsBox .contactsInfo .miniBox{
+    padding: 25px 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    background: white;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+.contactsBox .contactsInfo .miniBox .contactsIcons{
+    min-width: 50px;
+    height: 50px;
+    background: #00bbd47b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.contactsBox .contactsInfo .miniBox .contactsIcons:hover{
+    border: .2rem solid rgb(21, 130, 181);
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.contactsIcons ul{
+    color: black;
+    list-style-type: none;
+}
+.mainText{
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+.mainText h3{
+    color: black;
+}
+.form{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+.form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.form .inputBox input, 
+.form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.form .inputBox input:focus ~ span,
+.form .inputBox input:valid ~ span,
+.form .inputBox textarea:focus ~ span,
+.form .inputBox textarea:valid ~ span
+{
+    color: #00bbd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.form .inputBox input[type="submit"]{
+    width:100px;
+    background: #01D2E3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.form .inputBox input[type="submit"]:hover{
+    border: .2rem solid rgb(21, 130, 181);
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .contactsBox{
+        flex-direction: column;
+    }
+    .contactsBox .contactsInfo
+    {
+        margin-bottom: 40px;
+    }
+    .contactsBox .contactsInfo,
+    .form
+    {
+        width: 100%;
+    }
+}
+
+/*info*/
+.navbar ul .I,
+.navbar ul a:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+.Infosection{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.Infocontainer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+    margin-top: 1rem;
+}
+.image-section{
+	float: right;
+	width: 45%;
+    margin-top: 0rem;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .infoContent h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .infoContent p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+    text-align: justify;
+}
+.content-section .infoContent .Infobutton{
+	margin-top: 30px;
+}
+.content-section .infoContent .Infobutton a{
+	background-color: #3d3d3d;
+    padding: 0 2rem;
+	text-decoration: none;
+	color:#fff;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.content-section .infoContent .Infobutton a:hover{
+	border: .2rem solid rgb(255, 255, 255);
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: 5px 30px;
+}
+.InfoIcons{
+    margin-top: 5rem;
+    text-align: left;
+}
+.InfoIcons i{
+    margin:0 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.InfoIcons .fa:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+@media screen and (max-width: 768px){
+    .Infocontainer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .infoContent .Infobutton{
+	text-align: center;
+}
+.content-section .infoContent .Infobutton a{
+	padding:9px 30px;
+}
+.content-section .InfoIcons{
+	text-align: center;
+}
+}
+.hide{
+    margin-left: 25rem;
+    background-color: #002867;
+    padding: 0 2rem;
+	text-decoration: none;
+	color:#fff;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.hide:hover{
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+#myDIV{
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 5rem;
+}
+
+/*diagrams*/
+.diagramsSection{
+	width: 100%;
+	min-height: 100vh;
+	background-color: white;
+}
+.diagramsContainer{
+	width: 95%;
+	display: block;
+	margin:auto;
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+.diagrams_content-section{
+	float: left;
+	width: 55%;
+    margin-top: 3rem;
+    border-bottom: 2px solid black;
+    margin-left: -2rem;
+}
+#piechart{
+    float: right;
+	width: 45%;
+    margin-top: 3rem;
+}
+.diagrams_content-section .title{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.diagrams_content-section .diagramsContent h3{
+	margin-top: 15px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.diagrams_content-section .diagramsContent p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px){
+    .diagramsContainer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.diagrams_content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+#piechart{
+	float:none;
+	width:100%;
+}
+#piechart_3d{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+#table_div{
+	width: 100%;
+	height: auto;
+	display: block;
+    margin:auto;
+}
+#chart_div{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.diagrams_content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+}
+
+/*GALLERY PAGE*/
+.navbar ul .G,
+.navbar ul a:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+.gallerySection {
+    overflow: hidden;
+    background-color: whitesmoke;
+    margin-top: 5rem;
+}
+.gallery-title{
+    color:black;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+.gallery-containerr {
+    padding-top: 0rem;
+    padding-left: 14rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+ }
+.gallery-containerr::-webkit-scrollbar {
+    display: none;
+}
+.gallery-box {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+.gallery-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 10px #ddd;
+}
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-information {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+.photo-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.DesignButtonA{
+    margin-top: 15px;
+    margin-left: 7rem;
+}
+.DesignButtonA a{
+    background-color: #3d3d3d;
+    padding: 0 1rem;
+	text-decoration: none;
+	color:#fff;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.DesignButtonA a:hover{
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 5rem;
+    cursor: pointer;
+    padding:5px 10px;
+}
+.DesignButton{
+    margin-top: 15px;
+    margin-left: 8rem;
+}
+.DesignButton a{
+    background-color: #3d3d3d;
+    padding: 0 1rem;
+	text-decoration: none;
+	color:#fff;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.DesignButton a:hover{
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 5rem;
+    cursor: pointer;
+    padding:5px 10px;
+}
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 90%;
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgba(139, 10, 10, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+.pre-btn {
+    left: 0;
+    transform: rotate(360deg);
+}
+.nxt-btn {
+    right: 0;
+}
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+/*CATALOGUE*/
+
+.catalogueNavbar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 70rem;
+}
+.catalogueNavbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.catalogueNavbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.catalogueNavbar ul .CA,
+.catalogueNavbar ul a:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+.catalogue-all{
+  padding: 0 10%;
+}
+.catalogue-title{
+  color:black;
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.shop-container,
+.new-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.catalogue-box {
+  position: relative;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 10px 10px #ddd;
+}
+.catalogue-box .catalogue-box-img {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.catalogue-box .catalogue-box-img img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+.catalogue-box .catalogue-box-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.catalogue-image-title{
+    margin-top: 1rem;
+    text-align: center;
+}
+.menu-button{
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.menu-button:hover{
+    border: .2rem solid black;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.right-menu{
+    position: relative;
+    display: block;
+    float: left;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    text-align: center;
+}
+.dropdown-menu .dropA:hover{
+    background-color: rgb(66, 201, 203);
+    color:#fff;
+    font-size: 15px;
+    padding: 0.1rem 1.5rem;
+}
+.right-menu:hover .dropdown-menu{
+    display: block;
+}
+.right-menu:hover .menu-button{
+    background-color: transparent;
+}
+
+.catalogueDesignButtonA{
+    margin-top: 15px;
+    margin-left: 14rem;
+}
+.catalogueDesignButtonA a{
+    background-color: #3d3d3d;
+    padding: 0 1rem;
+	text-decoration: none;
+	color:#fff;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.catalogueDesignButtonA a:hover{
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 5rem;
+    cursor: pointer;
+    padding:5px 10px;
+}
+
+/*comps*/
+
+.comps-all{
+    padding: 0 10%;
+  }
+  .comps-title{
+    color:black;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .comps-container,
+  .new-container {
+    display: flex;
+    
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+    
+  }
+  .comps-box {
+    position: relative;
+    box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 10px 10px #ddd;
+    width: 480px;
+    height: 270px;
+  }
+  .comps-box .comps-box-img {
+    width: 480px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .comps-box .comps-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comps-box .comps-box-img img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .catalogue-image-title{
+      margin-top: 1rem;
+      text-align: center;
+  }

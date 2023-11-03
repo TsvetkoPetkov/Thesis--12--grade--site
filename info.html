@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/43f266dda1.js"></script>
+    <title>Инфо</title>
+	<script>
+		function myFunction() {
+  		var x = document.getElementById("myDIV");
+  		if (x.style.display == "none") {
+   		x.style.display = "block";
+  		} 
+		else {
+    		x.style.display = "none";
+  		}
+	}
+	</script>
+</head>
+<body class="infoPage">
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="info.html" class="I">Инфо</a></li>
+                <li><a href="catalogue.html">Каталог</a></li>
+                <li><a href="gallery.html">Галерия</a></li>
+                <li><a href="contactUs.html">Контакти</a></li>
+                <li><a href="author.html">Автор</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="Infosection">
+		<div class="Infocontainer">
+			<div class="content-section">
+				<div class="title">
+					<h1>Информация</h1>
+				</div>
+				<div class="infoContent">
+					<h3>Описание на етапите на създаване на сайта</h3>
+					<p>Преди всичко започнах с изработката на макет и графичното оформление на моите страници, благодарение на което създадох в себе си 
+					буквалната визуализация на сайта.Това ме улесни изключително много при писането на кода, защото имах
+				    основата, по която да се водя. Стратегията ми за оформление на страници беше да се стремя към „малко, но ефективно“, да бъда последователен и да имам „чувство за пространство“. 
+					Бях установил визуалните приоритети, бях съчетал цветовете, текста и графичните изображения,
+				    като ги съобразих с темата на сайта. Целта ми беше да помагам на хората да разбират как да се предвижват из сайта. Единственото, което ми оставаше да направя беше да напиша кода, необходим за създаването на моя сайт. 
+				    Използвайки езиците HTML, CSS и JS, аз започнах да пресъздавам с програмен код всяка една от странците, водейки се по изготвения от мен макет.</p>
+					<div class="Infobutton">
+						<a href="diagrams.html"> Вижте още</a>
+					</div>
+				</div>
+				<div class="InfoIcons">
+					<i class="fa fa-facebook-official" aria-hidden="true"><a href="#"></a></i>
+					<i class="fa fa-instagram" aria-hidden="true"><a href="#"></a></i>
+					<i class="fa fa-snapchat-square" aria-hidden="true"><a href="#"></a></i>
+					<i class="fa fa-twitter" aria-hidden="true"><a href="#"></a></i>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="./images/Difference-between-Web-Designing-and-Web-Development.png">
+				<button class="hide" onclick="myFunction()">Подробно за макети</button>
+						<div id="myDIV" style="display: none;">
+  							<p> За макета на сайта използвах програмата Adobe XD. Тя е доста разбираема и не толкова трудна за използване. След нейното стартиране се отваря прозорец, в който се избира размерът на новия 
+								работен файл. В него поставих снимки, които обработвах с помощта на други графични редактори, използвах различни форми, задавах им размери според нужното, разполагах 
+								ги на различни места, съобразявах цветовете един с друг и дори намалях яркостта им, докато не получа желаната от мен визия за всяка една от уеб страниците. След приключването на макета свързах 
+								всяка от страниците една с друга. Adobe XD може да превърне всяка една фигура, намираща се в работния лист в имитация на линк, и когато кликнем върху него можем 
+								да достигнем желаната от нас страница или адрес.
+							  </p>
+						</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/43f266dda1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Road+Rage&family=Source+Sans+Pro:wght@200&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <title>Контакти</title>
+</head>
+<body class="contactsBody">
+        <header>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="info.html">Инфо</a></li>
+                    <li><a href="catalogue.html">Каталог</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li><a href="contactUs.html" class="C">Контакти</a></li>
+                    <li><a href="author.html">Автор</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="contacts">
+            <div class="mainContent">
+                <h2>Свържете се с нас</h2>
+                <p>В случай, че имате някакви въпроси, винаги можете да се свържете с нас. 
+                    Ако желаете да помогнем по-бързо, моля, използвайте нашата контактна форма.  
+                </p>
+            </div>
+            <div class="contactsBox"> 
+                <div class="contactsInfo"> 
+                    <div class="miniBox"> 
+                        <div class="contactsIcons">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i><a href="#"></a></i>
+                        </div>
+                             <div class="mainText"> 
+                                <h3>Адрес</h3>
+                                <p>Сандански, България<br>2800<br>ул."Пирин" №95</p>
+                            </div>
+                    </div>
+                    <div class="miniBox">
+                        <div class="contactsIcons">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i><a href="#"></a></i>
+                        </div>
+                             <div class="mainText">
+                                <h3>Телефон</h3>
+                                <p>0878355030</p>
+                            </div>
+                    </div>
+                    <div class="miniBox">
+                        <div class="contactsIcons">
+                            <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"></a></i>
+                        </div>
+                             <div class="mainText">
+                                <h3>Имейл</h3>
+                                <p>cecoopetkov20032gmail.com</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="data_post.php" method="post">
+                        <h2>Изпрати съобщение</h2>
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span>Име</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">
+                            <span>Имейл</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="message" required="required"></textarea>
+                            <span>Съобщение...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Изпрати">
+                        </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+</body>
+</html>
